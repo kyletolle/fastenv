@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["kyle@nullsix.com"]
   spec.summary       = %q{Fast access to environment variables.}
   spec.description   = %q{Takes advantage of method_missing to give you fast access to environment variables.}
-  spec.homepage      = "https://rubygems.org/gems/fastenv"
+  spec.homepage      = "https://github.com/kyletolle/fastenv"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
