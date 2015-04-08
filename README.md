@@ -1,6 +1,7 @@
 # Fastenv
 
 [![Gem Version](https://badge.fury.io/rb/fastenv.svg)](http://badge.fury.io/rb/fastenv)
+[![Build Status](https://travis-ci.org/kyletolle/fastenv.svg?branch=master)](https://travis-ci.org/kyletolle/fastenv)
 
 Fast access to environment variables. Takes advantage of method_missing to
 easily return values of environment variable.
