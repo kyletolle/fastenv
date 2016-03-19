@@ -51,6 +51,19 @@ If the environment variable doesn't exist, a `NameError` will be raise.
 Fastenv is intended for querying credentials. Missing credentials is an
 exceptional event.
 
+### Defaults
+
+It can be helpful to specify default values though. You can give Fastenv a
+block, and, if the environment variable is not set, the block will be evaluated
+and its value returned.
+
+```ruby
+require 'fastenv'
+
+your_special_value = Fastenv.env_does_not_exist { 'but this is a default' }
+=> "but this is a default"
+```
+
 ---
 
 ## Goes Well With
