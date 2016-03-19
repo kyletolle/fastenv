@@ -7,6 +7,9 @@ class Fastenv
     if ENV.include?(env_var)
       ENV[env_var]
 
+    elsif block_given?
+      yield
+
     else
       raise NameError, "Couldn't find the environment variable named #{env_var}"
     end
